@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cool places to visit in GA</title>
+
+	<style type="text/css" media="screen">
+		/* Our Stlyes go here */
+	#gallery{
+		text-align: center;
+	}
+	/* This rule is ONLY!! for img tags inside of #middle-section */
+	#middle-section img{
+		width:  15%;
+		/* Set a border around each thumbnail */
+		border:  4px solid #555;
+
+	}
+	</style>
+
+</head>
+<body>
+
+	<!-- This is the main wrapper for the page -->
+	<div id="gallery">
+		<!-- Make a wrapper for the top section -->
+		<div id="top-section">
+			<h2>A simple photo gallery of GA spots in HTML & CSS</h2>
+		</div>
+		<!-- Make a div for our thumbnails to live in -->
+		<div id="middle-section">
+			<img src="ga_pics/arabia_mnt.jpg" onclick="largePic.src=this.src">
+			<img src="ga_pics/callaway_gardens.jpg" onclick="largePic.src=this.src">
+			<img src="ga_pics/Etowah_Indian_Mounds.jpg" onclick="largePic.src=this.src">
+			<img src="ga_pics/prov_state_canyon.jpg" onclick="largePic.src=this.src">
+			<img src="ga_pics/wormsloe.jpg" onclick="largePic.src=this.src">
+		</div>
+		<!-- Make a div for the big image to show up -->
+		<div id="bottom-section">
+			<img src="ga_pics/arabia_mnt.jpg" name="largePic">
+		</div>
+	</div>
+
+</body>
+</html>
